@@ -19,10 +19,12 @@ export default function Home({ navigation }) {
         <View className='px-5 py-5 '>
           <Text className='font-semibold text-white text-2xl w-[50%] '>Libreria </Text>
           <Text className='font-semibold text-white text-2xl w-[50%] '>Barranquina</Text>
-          <TouchableOpacity className='bg-white self-start px-4 py-1 rounded-full mt-4 mx-2'>
+          <Pressable
+          onPress={() => navigation.navigate('Libreria')}
+          className='bg-white self-start px-4 py-1 rounded-full mt-4 mx-2'>
             <Text className='font-semibold text-black text-base w-[50%]  capitalize'>visitar ahora</Text>
 
-          </TouchableOpacity>
+          </Pressable>
           <Image source={require('../../assets/librosbanner.png')}
             className='w-44 -top-10 h-52 absolute -right-2' />
         </View>
@@ -33,10 +35,12 @@ export default function Home({ navigation }) {
           <View className='w-6 h-6 rounded-full bg-green-500 ml-3'></View>
           <Text className='text-sm w-[60%] leading-4 pt-2'>Explorador Educativo</Text>
         </View>
-        <View className='w-[48%] flex-row h-14 bg-gray-200 items-center space-x-4 justify-around rounded-xl'>
+        <Pressable
+        onPress={() => navigation.navigate('Calculadoras')}
+        className='w-[48%] flex-row h-14 bg-gray-200 items-center space-x-4 justify-around rounded-xl'>
           <View className='w-6 h-6 rounded-full bg-blue-500 ml-3'></View>
           <Text className='text-sm w-[60%] leading-4 pt-2'>Calculadoras Matematicas</Text>
-        </View>
+        </Pressable>
         <View className='w-[48%] flex-row h-14 bg-gray-200 items-center space-x-4 justify-around rounded-xl'>
           <View className='w-6 h-6 rounded-full bg-orange-500 ml-3'></View>
           <Text className='text-sm w-[60%] leading-4 pt-2'>Aprende Idiomas</Text>

@@ -20,6 +20,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { LibraryStack, StackTools } from './stacks';
 import TablaPeriodica from './screens/tools/tabla/Tabla';
 import DetailsElement from './screens/tools/tabla/DetailsElement';
+import HomeCalcs from './screens/tools/calcs/HomeCalcs';
 
 
 const Stack = createNativeStackNavigator()
@@ -68,6 +69,7 @@ function MyStacks() {
             <Stack.Screen name="Libreria" component={LibraryStack} />
             <Stack.Screen name="TablaPeriodica" component={TablaPeriodica} />
             <Stack.Screen name="DetailsElement" component={DetailsElement} />
+            <Stack.Screen name="Calculadoras" component={HomeCalcs} />
         </Stack.Navigator>
     )
 }
