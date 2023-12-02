@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "quimify",
-    "slug": "quimify",
+    "name": "SebHub",
+    "slug": "SebHub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.josemaria16.SebHub"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a27cf085-9447-45a0-b456-8818fd41ead2"
+      }
     }
   }
 }
